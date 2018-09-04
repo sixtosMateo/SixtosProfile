@@ -5,7 +5,7 @@ class ProfileHeader extends React.Component{
   render(){
     return (
       <div className="profile-header">
-        <p>"Mateo Sixtos"</p>
+        <p>Mateo Sixtos</p>
       </div>
     )
   }
