@@ -4,7 +4,7 @@ import React from 'react'
 class FilterCanvas extends React.Component{
   render(){
     return (
-      <div className="FilterCanvas">
+      <div className="filter-canvas">
         <p>"Hello this the canvas for a filter"</p>
       </div>
     )
