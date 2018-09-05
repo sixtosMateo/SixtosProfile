@@ -5,6 +5,7 @@ import FilterCanvas from './components/FilterCanvas'
 import SkillList from './components/SkillList'
 import FilterList from './components/FilterList'
 import ImageCanvas from './components/ImageCanvas'
+import ContactInfo from './components/ContactInfo'
 
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
         <SkillList/>
         <FilterList/>
         <ImageCanvas/>
+        <ContactInfo/>
       </div>
     );
   }

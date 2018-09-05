@@ -14,7 +14,7 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 60px;
   grid-template-areas:
-      "i p p p p p"
+      "i p p p o o"
       "s c c c c c"
       "s c c c c c"
       "f c c c c c"
@@ -23,11 +23,16 @@
 
 }
 
-.profile-header, .skill-list, .filter-list, .filter-canvas, .image-canvas{
+.profile-header, .skill-list,
+.filter-list, .filter-canvas,
+.image-canvas, .contact-info{
   border: 1px solid;
 
 }
 
+.contact-info{
+  grid-area: o;
+}
 .image-canvas{
   grid-area: i;
 }
