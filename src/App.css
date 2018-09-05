@@ -1,5 +1,6 @@
 :root{
   background-color: #DCDCDC;
+
 }
 .app {
   text-align: center;
@@ -7,15 +8,15 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  height: 500px;
 }
 
 .profile-header {
   background-color: #222;
-  height: 150px;
+  height: 125px;
   padding: 20px;
   color: white;
 }
-
-.app-title {
-  font-size: 1.5em;
+.profile-header h1{
+  font-size: 2.5em;
 }
