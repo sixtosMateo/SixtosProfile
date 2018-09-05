@@ -5,10 +5,43 @@
 .app {
   text-align: center;
   background-color: #FFFFFF;
-  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  height: 500px;
+
+  display: grid;
+  width: 90%;
+
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 60px;
+  grid-template-areas:
+      "p p p p p p"
+      "s c c c c c"
+      "f c c c c c"
+      "f c c c c c"
+      "f c c c c c"
+      "f c c c c c";
+
+}
+
+.profile-header, .skill-list, .filter-list, .filter-canvas{
+  border: 1px solid;
+
+}
+
+.profile-header {
+  grid-area: p;
+  border-color: red;
+
+}
+.skill-list{
+  grid-area: s;
+}
+.filter-list{
+  grid-area: f;
+}
+
+.filter-canvas{
+  grid-area: c;
 }
 
 .profile-header {
