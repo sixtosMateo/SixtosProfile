@@ -14,18 +14,22 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 60px;
   grid-template-areas:
-      "p p p p p p"
+      "i p p p p p"
       "s c c c c c"
-      "f c c c c c"
+      "s c c c c c"
       "f c c c c c"
       "f c c c c c"
       "f c c c c c";
 
 }
 
-.profile-header, .skill-list, .filter-list, .filter-canvas{
+.profile-header, .skill-list, .filter-list, .filter-canvas, .image-canvas{
   border: 1px solid;
 
+}
+
+.image-canvas{
+  grid-area: i;
 }
 
 .profile-header {
@@ -33,6 +37,7 @@
   border-color: red;
 
 }
+
 .skill-list{
   grid-area: s;
 }

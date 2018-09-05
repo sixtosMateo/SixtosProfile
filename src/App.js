@@ -4,7 +4,7 @@ import ProfileHeader from './components/ProfileHeader'
 import FilterCanvas from './components/FilterCanvas'
 import SkillList from './components/SkillList'
 import FilterList from './components/FilterList'
-
+import ImageCanvas from './components/ImageCanvas'
 
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
         <FilterCanvas/>
         <SkillList/>
         <FilterList/>
-
+        <ImageCanvas/>
       </div>
     );
   }
