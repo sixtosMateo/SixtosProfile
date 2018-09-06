@@ -2,10 +2,19 @@ import React from 'react'
 
 
 class FilterList extends React.Component{
+
   render(){
+    const filters = [ 'Filter:', 'Resume', 'Projects', 'Technical Experience', 'Hackathons', 'Education' ];
     return (
       <div className="filter-list">
-        <p>"Hello this is my list of filters"</p>
+
+        {filters.map( (filter, index)=>{
+          return(
+          <li key={index} className={"filter-" + filter}>
+            {filter}
+          </li>)
+        })}
+
       </div>
     )
   }
