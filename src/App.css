@@ -32,7 +32,15 @@
 
 .contact-info{
   grid-area: o;
+
 }
+.contact-list{
+  margin-top:20px;
+  margin-left:20px;
+  text-align: left;
+  list-style-type: none;
+}
+
 .image-canvas{
   grid-area: i;
 }
@@ -71,10 +79,12 @@
 
 .profile-header {
   background-color: #222;
-  height: 125px;
-  padding: 20px;
+  height: 125px auto;
+
   color: white;
 }
 .profile-header h1{
   font-size: 2.5em;
+  text-align: center;
+  margin: auto;
 }
