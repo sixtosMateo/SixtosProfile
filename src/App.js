@@ -8,7 +8,9 @@ import ImageCanvas from './components/ImageCanvas'
 import ContactInfo from './components/ContactInfo'
 
 
+
 class App extends Component {
+
   render() {
     return (
       <div className="app">

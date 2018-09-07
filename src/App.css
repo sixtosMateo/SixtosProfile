@@ -45,6 +45,14 @@
 
 .skill-list{
   grid-area: s;
+  text-align: left;
+}
+.skill-list h2{
+  margin: 3px;
+}
+
+.skill-list, .language-list, .tool-list{
+  padding-left: 5px;
 }
 .filter-list{
   grid-area: f;

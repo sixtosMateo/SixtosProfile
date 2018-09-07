@@ -6,6 +6,7 @@ class FilterCanvas extends React.Component{
     return (
       <div className="filter-canvas">
         <p>"Hello this the canvas for a filter"</p>
+
       </div>
     )
   }
