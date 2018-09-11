@@ -13,7 +13,7 @@ class App extends Component {
     constructor(){
       super()
         this.state ={
-          filter:null
+          filter: 1
         }
         this.setFilter = this.setFilter.bind(this)
       }
