@@ -12,7 +12,7 @@ class FilterList extends React.Component{
           return(
             <li key={index} className={"filter-" + filter}>
               <a
-                onClick={() => this.props.filter(index)}>
+                onClick={() => this.props.setFilter(index)}>
                 {filter}
               </a>
             </li>)

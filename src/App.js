@@ -15,29 +15,29 @@ class App extends Component {
         this.state ={
           filter:null
         }
-        this.filter = this.filter.bind(this)
+        this.setFilter = this.setFilter.bind(this)
       }
 
-    filter(filter){
+    setFilter(filter){
       this.setState({filter:filter})
-      window.alert(filter)
+
     }
 
 
 
 
-  render() {
-    return (
-      <div className="app">
-        <ProfileHeader/>
-        <FilterCanvas/>
-        <SkillList/>
-        <FilterList filter={this.filter}/>
-        <ImageCanvas/>
-        <ContactInfo/>
-      </div>
-    );
-  }
+    render() {
+      return (
+        <div className="app">
+          <ProfileHeader/>
+          <FilterCanvas filterId={this.state.filter}/>
+          <SkillList/>
+          <FilterList setFilter={this.setFilter}/>
+          <ImageCanvas/>
+          <ContactInfo/>
+        </div>
+      );
+    }
 }
 
 export default App;

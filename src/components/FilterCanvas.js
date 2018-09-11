@@ -5,7 +5,7 @@ class FilterCanvas extends React.Component{
   render(){
     return (
       <div className="filter-canvas">
-        <p>"Hello this the canvas for a filter"</p>
+        <p>"Hello this the canvas " + {this.props.filterId}</p>
 
       </div>
     )
