@@ -11,10 +11,8 @@ class FilterList extends React.Component{
         {filters.map( (filter, index)=>{
           return(
             <li key={index} className={"filter-" + filter}>
-
               <a
-              /*user clicks room triggers app's subscribeToRoom base on the room id that was click inverse work flow*/
-                onClick={() => window.alert(filter + " "+ index)}>
+                onClick={() => this.props.filter(index)}>
                 {filter}
               </a>
             </li>)

@@ -10,6 +10,21 @@ import ContactInfo from './components/ContactInfo'
 
 
 class App extends Component {
+    constructor(){
+      super()
+        this.state ={
+          filter:null
+        }
+        this.filter = this.filter.bind(this)
+      }
+
+    filter(filter){
+      this.setState({filter:filter})
+      window.alert(filter)
+    }
+
+
+
 
   render() {
     return (
@@ -17,7 +32,7 @@ class App extends Component {
         <ProfileHeader/>
         <FilterCanvas/>
         <SkillList/>
-        <FilterList/>
+        <FilterList filter={this.filter}/>
         <ImageCanvas/>
         <ContactInfo/>
       </div>
