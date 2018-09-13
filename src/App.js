@@ -6,6 +6,7 @@ import SkillList from './components/SkillList'
 import FilterList from './components/FilterList'
 import ImageCanvas from './components/ImageCanvas'
 import ContactInfo from './components/ContactInfo'
+import Footer from './components/Footer'
 
 
 
@@ -13,28 +14,26 @@ class App extends Component {
     constructor(){
       super()
         this.state ={
-          filter: 1
+          filter: 0
         }
         this.setFilter = this.setFilter.bind(this)
       }
 
     setFilter(filter){
-      this.setState({filter:filter})
+      this.setState({filter})
 
     }
-
-
-
 
     render() {
       return (
         <div className="app">
           <ProfileHeader/>
-          <FilterCanvas filterId={this.state.filter}/>
+          <FilterCanvas filter={this.state.filter}/>
           <SkillList/>
           <FilterList setFilter={this.setFilter}/>
           <ImageCanvas/>
           <ContactInfo/>
+          <Footer/>
         </div>
       );
     }

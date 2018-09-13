@@ -4,7 +4,7 @@ import React from 'react'
 class FilterList extends React.Component{
 
   render(){
-    const filters = [ 'Filter:', 'Resume', 'Projects', 'Technical Experience', 'Hackathons', 'About Me' ];
+    const filters = [ 'Resume', 'Projects', 'Technical Experience', 'Hackathons', 'About Me' ];
     return (
       <div className="filter-list">
 

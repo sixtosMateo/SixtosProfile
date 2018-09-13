@@ -19,7 +19,7 @@
       "s c c c c c"
       "f c c c c c"
       "f c c c c c"
-      "f c c c c c";
+      "e e e e e e";
 
 }
 
@@ -28,6 +28,9 @@
 .image-canvas, .contact-info{
   border: 1px solid;
 
+}
+.footer{
+  grid-area: o;
 }
 
 .contact-info{
