@@ -7,7 +7,7 @@ class FilterList extends React.Component{
     const filters = [ 'Resume', 'Projects', 'Technical Experience', 'Hackathons', 'About Me' ];
     return (
       <div className="filter-list">
-
+        <li><h3>Filters:</h3></li>
         {filters.map( (filter, index)=>{
           return(
             <li key={index} className={"filter-" + filter}>

@@ -12,7 +12,7 @@
   width: 90%;
 
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 60px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 150px;
   grid-template-areas:
       "i p p p o o"
       "s c c c c c"
@@ -25,13 +25,11 @@
 
 .profile-header, .skill-list,
 .filter-list, .filter-canvas,
-.image-canvas, .contact-info{
+.image-canvas, .contact-info, .footer{
   border: 1px solid;
 
 }
-.footer{
-  grid-area: o;
-}
+
 
 .contact-info{
   grid-area: o;
@@ -53,7 +51,9 @@
   border-color: red;
 
 }
-
+.footer{
+  grid-area: e;
+}
 .skill-list{
   grid-area: s;
   text-align: left;
