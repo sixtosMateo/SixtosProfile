@@ -1,12 +1,11 @@
 import React from 'react'
-
+import PDFResume from './PDFResume'
 
 class Resume extends React.Component{
   render(){
     return (
       <div className="resume-canvas">
-        <p>"Hello this the Resume canvas"</p>
-
+        <PDFResume/>
       </div>
     )
   }

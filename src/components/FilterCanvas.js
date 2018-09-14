@@ -5,6 +5,7 @@ import Hackathon from './filterComponents/Hackathon'
 import Project from './filterComponents/Project'
 import Resume from './filterComponents/Resume'
 
+
   // const filters = [ <Resume/>, <Project/>, <Experience/>, <Hackathon/>, <About/> ];
   // filters[{this.props.filter}]
 class FilterCanvas extends React.Component{
@@ -12,6 +13,7 @@ class FilterCanvas extends React.Component{
     const filters = [ <Resume/>, <Project/>, <Experience/>, <Hackathon/>, <About/> ];
     return (
       <div className="filter-canvas">
+
         {filters[this.props.filter]}
        </div>
 

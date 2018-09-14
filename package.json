@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-pdf": "^3.0.5",
     "react-scripts": "1.1.5"
   },
   "scripts": {
@@ -14,8 +15,8 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^4.5.2",
     "file-loader": "^2.0.0",
     "url-loader": "^1.1.1"
   }
-
 }
