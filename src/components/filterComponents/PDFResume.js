@@ -22,10 +22,10 @@ class PDFResume extends React.Component{
     const { pageNumber, numPages } =this.state;
     return (
       <div className="pdf-resume">
-        <Document
+        <Document className="pdf-resume"
           file="/Sixtos_Resume.pdf"
           onLoadSuccess={this.onDocumentLoad}>
-          <Page pageNumber={pageNumber} />
+          <Page className="pdf-resume" pageNumber={pageNumber} />
         </Document>
         <p>Page {pageNumber} of {numPages}</p>
         </div>
