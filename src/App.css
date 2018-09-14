@@ -80,9 +80,6 @@
   grid-area: c;
 }
 
-
-
-
 .profile-header {
   background-color: #222;
   height: 125px auto;
@@ -98,6 +95,9 @@
   margin: 3%;
   border: 1px solid;
   align-content: center;
+}
+.react-pdf__Page__textContent{
+  width: inherit !important;
 }
 
 .profile-header h1{
