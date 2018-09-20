@@ -5,7 +5,7 @@ import React from 'react'
 class WorldHackathon extends React.Component{
   render(){
     return (
-      <div>
+      <div className="world-hackathon">
           World Hackathon
        </div>
 

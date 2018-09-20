@@ -3,7 +3,7 @@ import React from 'react'
 class TomorrowHackathon extends React.Component{
   render(){
     return (
-      <div>
+      <div className="tomorrow-hackathon">
           Tomorrow Hackathon
        </div>
 
