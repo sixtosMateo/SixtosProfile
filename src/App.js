@@ -12,15 +12,20 @@ import Footer from './components/Footer'
 
 class App extends Component {
     constructor(){
-      super()
+        super()
         this.state ={
-          filter: 0
+          filter: 0,
+          hackathon: 0
         }
         this.setFilter = this.setFilter.bind(this)
+        this.setHackathon = this.setHackathon.bind(this)
       }
 
     setFilter(filter){
       this.setState({filter})
+    }
+    setHackathon(hackathon){
+      this.setState({hackathon})
 
     }
 
@@ -28,9 +33,12 @@ class App extends Component {
       return (
         <div className="app">
           <ProfileHeader/>
-          <FilterCanvas filter={this.state.filter}/>
+          <FilterCanvas
+            filter={this.state.filter}
+            hackathon={this.state.hackathon}
+            setHackathon={this.setHackathon} />
           <SkillList/>
-          <FilterList setFilter={this.setFilter}/>
+          <FilterList setFilter={this.setFilter} />
           <ImageCanvas/>
           <ContactInfo/>
           <Footer/>

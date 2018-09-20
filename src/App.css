@@ -29,12 +29,13 @@
   border: 1px solid;
 
 }
-.hackathon-nav{
+.hackathon-nav a{
   border: 1px solid;
 }
 .hackathon-component{
   border: 2px solid;
 }
+
 
 .contact-info{
   grid-area: o;
