@@ -30,6 +30,10 @@
 
 }
 
+.hackathon-component{
+  border: 1px solid;
+}
+
 
 .contact-info{
   grid-area: o;
