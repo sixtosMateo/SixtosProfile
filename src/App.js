@@ -17,6 +17,7 @@ class App extends Component {
           filter: 0,
           hackathon: 0,
           experience: 0,
+          project: 0,
           experienceListObj:[{
             0:{
               'city': 'Salinas, CA',
@@ -104,17 +105,19 @@ class App extends Component {
         this.setFilter = this.setFilter.bind(this)
         this.setHackathon = this.setHackathon.bind(this)
         this.setExperience = this.setExperience.bind(this)
+        this.setProject = this.setProject.bind(this)
       }
     setExperience(experience){
         this.setState({experience})
       }
-
     setFilter(filter){
       this.setState({filter})
     }
     setHackathon(hackathon){
       this.setState({hackathon})
-
+    }
+    setProject(project){
+      this.setState({project})
     }
 
     render() {
@@ -126,6 +129,7 @@ class App extends Component {
             filter={this.state.filter}
             experience={this.state.experience}
             hackathon={this.state.hackathon}
+            setProject={this.setProject}
             setHackathon={this.setHackathon}
             setExperience={this.setExperience} />
           <SkillList/>

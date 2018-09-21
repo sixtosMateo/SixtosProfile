@@ -15,7 +15,7 @@ class Project extends React.Component{
           { projects.map((project, index)=>{
             return(
                 <a key={index} className={"project-" + project}
-                  onClick={()=> window.alert(project)}>
+                  onClick={()=> this.props.setProject(project)}>
                   { project }
                 </a>
             )
