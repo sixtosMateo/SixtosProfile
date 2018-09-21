@@ -62,41 +62,41 @@ class App extends Component {
           hackathonListObj:[
             {
               0:{
-                'date':'',
-                'description':'',
-                'image':'',
-                'learning':'',
-                'projectName':'First Hackathon',
-                'teammates':'',
-                'tools':''
+                'date':'September 2017',
+                'description':'To be Continue...',
+                'image':'Team picture',
+                'learning':'This will be a description of what I learned',
+                'projectName':'First Hackathon: Juxtaposr',
+                'teammates':'Name1, Name2, Name3, Name4',
+                'tools':'tool1, tool2, tool3, tool4'
               },
 
               1:{
-                'date':'',
-                'description':'',
-                'image':'',
-                'learning':'',
-                'projectName':'World Hackathon',
-                'teammates':'',
-                'tools':''
+                'date':'September 2017',
+                'description':'To be Continue...',
+                'image':'Team picture ',
+                'learning':'This will be a description of what I learned',
+                'projectName':'World Hackathon: Geocash',
+                'teammates':'Name1, Name2, Name3, Name4',
+                'tools':'tool1, tool2, tool3, tool4'
               },
               2:{
-                'date':'',
-                'description':'',
-                'image':'',
-                'learning':'',
-                'projectName':'Fashion Hackathon',
-                'teammates':'',
-                'tools':''
+                'date':'September 2017',
+                'description':'To be Continue...',
+                'image':'Team picture',
+                'learning':'This will be a description of what I learned',
+                'projectName':'Fashion Hackathon: Th3ms',
+                'teammates':'Name1, Name2, Name3, Name4',
+                'tools':'tool1, tool2, tool3, tool4'
               },
               3:{
-                'date':'',
-                'description':'',
-                'image':'',
-                'learning':'',
-                'projectName':'Tomorrow Hackathon',
-                'teammates':'',
-                'tools':''
+                'date':'October 2017',
+                'description':'To be Continue...',
+                'image':'Team picture',
+                'learning':'This will be a description of what I learned',
+                'projectName':'Tomorrow Hackathon: SynCare',
+                'teammates':'Name1, Name2, Name3, Name4',
+                'tools':'tool1, tool2, tool3, tool4'
               }
             }
           ]
