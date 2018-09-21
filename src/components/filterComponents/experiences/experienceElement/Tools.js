@@ -5,7 +5,7 @@ import React from 'react'
 class Tools extends React.Component{
   render(){
     return (
-      <div className="tools">
+      <div className="experience-tools">
             Tools
       </div>
 

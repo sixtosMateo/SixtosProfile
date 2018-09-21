@@ -16,14 +16,96 @@ class App extends Component {
         this.state ={
           filter: 0,
           hackathon: 0,
-          experience: 0
+          experience: 0,
+          experienceListObj:[{
+            0:{
+              'city': 'Salinas, CA',
+              'company': 'Karis Toys',
+              'date': 'June 2018 - Present',
+              'duties': {0: 'Backend', 1:'Frontend', 2:'Database'},
+              'github': 'https://github.com/sixtosMateo/',
+              'learning': 'To be continue...',
+              'lines': 'Over 2000 lines',
+              'links': 'https://dry-hamlet-69318.herokuapp.com',
+              'position': 'Software Developer',
+              'teamsize':'1',
+              'tools': {0:'Python', 1:'JavaScript', 2:'Html' }
+            },
+            1:{
+              'city': 'San Jose, CA (Remote)',
+              'company': 'nLightn Technologies',
+              'date': 'December 2017 - April 2018',
+              'duties': {0: 'Backend', 1:'Frontend', 2:'Database'},
+              'github': 'https://github.com/sixtosMateo/',
+              'learning': 'To be continue...',
+              'lines': 'Over 2500 lines',
+              'links': 'LinkedIn',
+              'position': 'Full-Stack Developer',
+              'teamsize':'6',
+              'tools': {0:'Python', 1:'JavaScript', 2:'Html' }
+            },
+            2:{
+              'city': 'Monterey, CA',
+              'company': 'Capital Insurance Group',
+              'date': 'October 2016 - April 2016',
+              'duties': {0: 'Backend', 1:'Frontend'},
+              'github': 'https://github.com/sixtosMateo/',
+              'learning': 'To be continue...',
+              'lines': 'Over 2000 lines',
+              'links': 'LinkedIn',
+              'position': 'Associate Software Developer',
+              'teamsize':'6',
+              'tools': {0:'Java', 1:'HTTP request'}
+            }
+
+          }],
+          hackathonListObj:[
+            {
+              0:{
+                'date':'',
+                'description':'',
+                'image':'',
+                'learning':'',
+                'projectName':'First Hackathon',
+                'teammates':'',
+                'tools':''
+              },
+
+              1:{
+                'date':'',
+                'description':'',
+                'image':'',
+                'learning':'',
+                'projectName':'World Hackathon',
+                'teammates':'',
+                'tools':''
+              },
+              2:{
+                'date':'',
+                'description':'',
+                'image':'',
+                'learning':'',
+                'projectName':'Fashion Hackathon',
+                'teammates':'',
+                'tools':''
+              },
+              3:{
+                'date':'',
+                'description':'',
+                'image':'',
+                'learning':'',
+                'projectName':'Tomorrow Hackathon',
+                'teammates':'',
+                'tools':''
+              }
+            }
+          ]
         }
         this.setFilter = this.setFilter.bind(this)
         this.setHackathon = this.setHackathon.bind(this)
         this.setExperience = this.setExperience.bind(this)
       }
     setExperience(experience){
-        window.alert(experience)
         this.setState({experience})
       }
 
@@ -38,6 +120,7 @@ class App extends Component {
     render() {
       return (
         <div className="app">
+
           <ProfileHeader/>
           <FilterCanvas
             filter={this.state.filter}

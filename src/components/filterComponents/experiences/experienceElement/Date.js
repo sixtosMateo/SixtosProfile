@@ -5,7 +5,7 @@ import React from 'react'
 class Date extends React.Component{
   render(){
     return (
-      <div className="date">
+      <div className="experience-date">
             Date
       </div>
 
