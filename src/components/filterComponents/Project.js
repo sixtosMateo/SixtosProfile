@@ -1,11 +1,26 @@
 import React from 'react'
+import Chat from './projects/Chat'
+import Restaurant from './projects/Restaurant'
+import SynCare from './projects/SynCare'
 
 
 class Project extends React.Component{
   render(){
+    const projects = [ "SynCare", "Chat", "Restaurant"];
+    const components = [ <Chat />, <Restaurant />, <SynCare />];
     return (
       <div className="project-canvas">
-        <p>"Hello this the Project canvas"</p>
+
+      <div className="project-nav">
+          { projects.map((project, index)=>{
+            return(
+                <a key={index} className={"project-" + project}
+                  onClick={()=> window.alert(project)}>
+                  { project }
+                </a>
+            )
+          }) }
+      </div>
 
       </div>
     )
