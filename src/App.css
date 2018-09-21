@@ -36,6 +36,10 @@
   border: 2px solid;
 }
 
+.experience-nav a{
+  border: 1px solid;
+}
+
 
 .contact-info{
   grid-area: o;

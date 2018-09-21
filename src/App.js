@@ -15,10 +15,16 @@ class App extends Component {
         super()
         this.state ={
           filter: 0,
-          hackathon: 0
+          hackathon: 0,
+          experience: 0
         }
         this.setFilter = this.setFilter.bind(this)
         this.setHackathon = this.setHackathon.bind(this)
+        this.setExperience = this.setExperience.bind(this)
+      }
+    setExperience(experience){
+        window.alert(experience)
+        this.setState({experience})
       }
 
     setFilter(filter){
@@ -35,8 +41,10 @@ class App extends Component {
           <ProfileHeader/>
           <FilterCanvas
             filter={this.state.filter}
+            experience={this.state.experience}
             hackathon={this.state.hackathon}
-            setHackathon={this.setHackathon} />
+            setHackathon={this.setHackathon}
+            setExperience={this.setExperience} />
           <SkillList/>
           <FilterList setFilter={this.setFilter} />
           <ImageCanvas/>

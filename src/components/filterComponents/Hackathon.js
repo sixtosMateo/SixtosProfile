@@ -23,7 +23,7 @@ class Hackathon extends React.Component{
             }) }
         </div>
 
-        { components[this.props.hackathon] } 
+        { components[this.props.hackathon] }
 
       </div>
     )

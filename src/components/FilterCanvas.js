@@ -10,7 +10,9 @@ import Resume from './filterComponents/Resume'
   // filters[{this.props.filter}]
 class FilterCanvas extends React.Component{
   render(){
-    const filters = [ <Resume/>, <Project/>, <Experience/>, <Hackathon setHackathon={this.props.setHackathon} hackathon={this.props.hackathon}/>, <About/> ];
+    const filters = [ <Resume/>, <Project/>,
+                      <Experience setExperience={this.props.setExperience} experience={this.props.experience}/>, 
+                      <Hackathon setHackathon={this.props.setHackathon} hackathon={this.props.hackathon}/>, <About/> ];
     return (
       <div className="filter-canvas">
         {filters[this.props.filter]}
