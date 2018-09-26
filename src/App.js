@@ -14,10 +14,58 @@ class App extends Component {
     constructor(){
         super()
         this.state ={
+          hackathonListObj:[
+              {
+                'date':'September 2017',
+                'description':'To be Continue...',
+                'image':'Team picture',
+                'learning':'This will be a description of what I learned',
+                'projectName': 'First Hackathon: Juxtaposr',
+                'teammates':'Name1, Name2, Name3, Name4',
+                'tools':'tool1, tool2, tool3, tool4'
+              },
+
+              {
+                'date':'September 2017',
+                'description':'To be Continue...',
+                'image':'Team picture ',
+                'learning':'This will be a description of what I learned',
+                'projectName': 'World Hackathon: Geocash',
+                'teammates':'Name1, Name2, Name3, Name4',
+                'tools':'tool1, tool2, tool3, tool4'
+              },
+              {
+                'date':'September 2017',
+                'description':'To be Continue...',
+                'image':'Team picture',
+                'learning':'This will be a description of what I learned',
+                'projectName':'Fashion Hackathon: Th3ms',
+                'teammates':'Name1, Name2, Name3, Name4',
+                'tools':'tool1, tool2, tool3, tool4'
+              },
+              {
+                'date':'October 2017',
+                'description':'To be Continue...',
+                'image':'Team picture',
+                'learning':'This will be a description of what I learned',
+                'projectName':'Tomorrow Hackathon: SynCare',
+                'teammates':'Name1, Name2, Name3, Name4',
+                'tools':'tool1, tool2, tool3, tool4'
+              }
+          ],
           filter: 0,
           hackathon: 0,
           experience: 0,
           project: 0,
+          hackathonObj: {
+            'date':'September 2017',
+            'description':'To be Continue...',
+            'image':'Team picture',
+            'learning':'This will be a description of what I learned',
+            'projectName': 'First Hackathon: Juxtaposr',
+            'teammates':'Name1, Name2, Name3, Name4',
+            'tools':'tool1, tool2, tool3, tool4'
+          },
           experienceListObj:[{
             0:{
               'city': 'Salinas, CA',
@@ -59,53 +107,14 @@ class App extends Component {
               'tools': {0:'Java', 1:'HTTP request'}
             }
 
-          }],
-          hackathonListObj:[
-            {
-              0:{
-                'date':'September 2017',
-                'description':'To be Continue...',
-                'image':'Team picture',
-                'learning':'This will be a description of what I learned',
-                'projectName':'First Hackathon: Juxtaposr',
-                'teammates':'Name1, Name2, Name3, Name4',
-                'tools':'tool1, tool2, tool3, tool4'
-              },
+          }]
 
-              1:{
-                'date':'September 2017',
-                'description':'To be Continue...',
-                'image':'Team picture ',
-                'learning':'This will be a description of what I learned',
-                'projectName':'World Hackathon: Geocash',
-                'teammates':'Name1, Name2, Name3, Name4',
-                'tools':'tool1, tool2, tool3, tool4'
-              },
-              2:{
-                'date':'September 2017',
-                'description':'To be Continue...',
-                'image':'Team picture',
-                'learning':'This will be a description of what I learned',
-                'projectName':'Fashion Hackathon: Th3ms',
-                'teammates':'Name1, Name2, Name3, Name4',
-                'tools':'tool1, tool2, tool3, tool4'
-              },
-              3:{
-                'date':'October 2017',
-                'description':'To be Continue...',
-                'image':'Team picture',
-                'learning':'This will be a description of what I learned',
-                'projectName':'Tomorrow Hackathon: SynCare',
-                'teammates':'Name1, Name2, Name3, Name4',
-                'tools':'tool1, tool2, tool3, tool4'
-              }
-            }
-          ]
         }
         this.setFilter = this.setFilter.bind(this)
         this.setHackathon = this.setHackathon.bind(this)
         this.setExperience = this.setExperience.bind(this)
         this.setProject = this.setProject.bind(this)
+        this.setHackathonObj = this.setHackathonObj.bind(this)
       }
     setExperience(experience){
         this.setState({experience})
@@ -115,9 +124,14 @@ class App extends Component {
     }
     setHackathon(hackathon){
       this.setState({hackathon})
+      this.setHackathonObj(hackathon)
     }
     setProject(project){
       this.setState({project})
+    }
+    setHackathonObj(index){
+      this.setState({hackathonObj: this.state.hackathonListObj[index]})
+
     }
 
     render() {
@@ -128,10 +142,11 @@ class App extends Component {
           <FilterCanvas
             filter={this.state.filter}
             experience={this.state.experience}
+            hackathonObj={this.state.hackathonObj}
             hackathon={this.state.hackathon}
             setProject={this.setProject}
             setHackathon={this.setHackathon}
-            setExperience={this.setExperience} />
+            setExperience={this.setExperience}/>
           <SkillList/>
           <FilterList setFilter={this.setFilter} />
           <ImageCanvas/>

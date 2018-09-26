@@ -12,7 +12,7 @@ class TomorrowHackathon extends React.Component{
   render(){
     return (
       <div className="tomorrow-hackathon">
-          TomorrowHackathon
+          {this.props.hackathonObj.projectName}
           <Date />
           <Description />
           <Image />

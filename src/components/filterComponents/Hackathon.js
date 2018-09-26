@@ -8,7 +8,7 @@ import FashionHackathon from './hackathons/FashionHackathon'
 class Hackathon extends React.Component{
   render(){
     const hackathons = [ "First Hackathon", "World Hackathon", "Fashion Hackathon", "Tomorrow Hackathon"];
-    const components = [ <FirstHackathon />, <WorldHackathon />, <FashionHackathon />, <TomorrowHackathon />];
+    const components = [ <FirstHackathon hackathonObj={this.props.hackathonObj}/>, <WorldHackathon  hackathonObj={this.props.hackathonObj}/>, <FashionHackathon hackathonObj={this.props.hackathonObj}/>, <TomorrowHackathon hackathonObj={this.props.hackathonObj}/>];
 
     return (
       <div className="hackathon-canvas">
@@ -22,6 +22,7 @@ class Hackathon extends React.Component{
               )
             }) }
         </div>
+
 
         { components[this.props.hackathon] }
 

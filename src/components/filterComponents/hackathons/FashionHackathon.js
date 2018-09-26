@@ -15,7 +15,7 @@ class FashionHackathon extends React.Component{
   render(){
     return (
       <div className="fashion-hackathon">
-          FashionHackathon
+          {this.props.hackathonObj.projectName}
           <Date />
           <Description />
           <Image />

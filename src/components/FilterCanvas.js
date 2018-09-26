@@ -13,10 +13,15 @@ class FilterCanvas extends React.Component{
     const filters = [ <Resume/>,
                       <Project setProject={this.props.setProject} />,
                       <Experience setExperience={this.props.setExperience} experience={this.props.experience}/>,
-                      <Hackathon setHackathon={this.props.setHackathon} hackathon={this.props.hackathon}/>, <About/> ];
+                      <Hackathon
+                        setHackathon={this.props.setHackathon}
+                        hackathon={this.props.hackathon}
+                        hackathonObj={this.props.hackathonObj}/>,
+                      <About/> ];
     return (
       <div className="filter-canvas">
         {filters[this.props.filter]}
+
        </div>
 
     )

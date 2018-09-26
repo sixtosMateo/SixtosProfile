@@ -14,7 +14,7 @@ class WorldHackathon extends React.Component{
   render(){
     return (
       <div className="world-hackathon">
-          WorldHackathon
+          {this.props.hackathonObj.projectName}
           <Date />
           <Description />
           <Image />

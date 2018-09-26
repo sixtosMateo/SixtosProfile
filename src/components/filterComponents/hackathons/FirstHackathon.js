@@ -14,7 +14,7 @@ class FirstHackathon extends React.Component{
   render(){
     return (
       <div className="first-hackathon">
-          FirstHackathon
+          {this.props.hackathonObj.projectName}
           <Date />
           <Description />
           <Image />
