@@ -15,14 +15,13 @@ class FashionHackathon extends React.Component{
   render(){
     return (
       <div className="fashion-hackathon">
-          {this.props.hackathonObj.projectName}
-          <Date />
-          <Description />
-          <Image />
-          <Learning />
-          <ProjectName />
-          <Teammates />
-          <Tools/>
+          <ProjectName projectName={this.props.hackathonObj.projectName}/>
+          <Date date={this.props.hackathonObj.date}/>
+          <Description description={this.props.hackathonObj.description}/>
+          <Image image={this.props.hackathonObj.image}/>
+          <Learning learning={this.props.hackathonObj.learning}/>
+          <Teammates teammates={this.props.hackathonObj.teammates}/>
+          <Tools tools={this.props.hackathonObj.tools}/>
        </div>
 
     )

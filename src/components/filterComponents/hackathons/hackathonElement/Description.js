@@ -6,7 +6,8 @@ class Description extends React.Component{
   render(){
     return (
       <div className="description">
-            Description
+        { this.props.description }
+
       </div>
 
     )

@@ -6,7 +6,8 @@ class Learning extends React.Component{
   render(){
     return (
       <div className="learning">
-            Learning
+        { this.props.learning }
+
       </div>
 
     )

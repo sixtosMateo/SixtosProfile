@@ -5,7 +5,7 @@ class Image extends React.Component{
   render(){
     return (
       <div className="image">
-          Image
+          {this.props.image}
       </div>
 
     )
