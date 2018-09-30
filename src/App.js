@@ -66,58 +66,70 @@ class App extends Component {
             'teammates':'Name1, Name2, Name3, Name4',
             'tools':'tool1, tool2, tool3, tool4'
           },
-          experienceListObj:[{
-            0:{
+          experienceObj: {
+            'city': 'Salinas, CA',
+            'company': 'Karis Toys',
+            'date': 'June 2018 - Present',
+            'duties': {0: 'Backend', 1:'Frontend', 2:'Database'},
+            'github': 'https://github.com/sixtosMateo/',
+            'learning': 'To be continue...',
+            'lines': 'Over 2000 lines',
+            'links': 'https://dry-hamlet-69318.herokuapp.com',
+            'position': 'Software Developer',
+            'teamsize':'1',
+            'tools': {0:'Python', 1:'JavaScript', 2:'Html' }
+          },
+          experienceListObj:[
+            {
               'city': 'Salinas, CA',
               'company': 'Karis Toys',
               'date': 'June 2018 - Present',
-              'duties': {0: 'Backend', 1:'Frontend', 2:'Database'},
+              'duties': {"0": 'Backend', "1":'Frontend', "2":'Database'},
               'github': 'https://github.com/sixtosMateo/',
               'learning': 'To be continue...',
               'lines': 'Over 2000 lines',
               'links': 'https://dry-hamlet-69318.herokuapp.com',
               'position': 'Software Developer',
               'teamsize':'1',
-              'tools': {0:'Python', 1:'JavaScript', 2:'Html' }
+              'tools': {"0":'Python', "1":'JavaScript', "2":'Html' }
             },
-            1:{
+            {
               'city': 'San Jose, CA (Remote)',
               'company': 'nLightn Technologies',
               'date': 'December 2017 - April 2018',
-              'duties': {0: 'Backend', 1:'Frontend', 2:'Database'},
+              'duties': {"0": 'Backend', "1":'Frontend', "2":'Database'},
               'github': 'https://github.com/sixtosMateo/',
               'learning': 'To be continue...',
               'lines': 'Over 2500 lines',
               'links': 'LinkedIn',
               'position': 'Full-Stack Developer',
               'teamsize':'6',
-              'tools': {0:'Python', 1:'JavaScript', 2:'Html' }
+              'tools': {"0":'Python', "1":'JavaScript', "2":'Html' }
             },
-            2:{
+            {
               'city': 'Monterey, CA',
               'company': 'Capital Insurance Group',
               'date': 'October 2016 - April 2016',
-              'duties': {0: 'Backend', 1:'Frontend'},
+              'duties': {"0": 'Backend', "1":'Frontend'},
               'github': 'https://github.com/sixtosMateo/',
               'learning': 'To be continue...',
               'lines': 'Over 2000 lines',
               'links': 'LinkedIn',
               'position': 'Associate Software Developer',
               'teamsize':'6',
-              'tools': {0:'Java', 1:'HTTP request'}
-            }
-
-          }]
-
+              'tools': {"0":'Java', "1":'HTTP request'}
+            }]
         }
         this.setFilter = this.setFilter.bind(this)
         this.setHackathon = this.setHackathon.bind(this)
         this.setExperience = this.setExperience.bind(this)
         this.setProject = this.setProject.bind(this)
         this.setHackathonObj = this.setHackathonObj.bind(this)
+        this.setExperienceObj = this.setExperienceObj.bind(this)
       }
     setExperience(experience){
         this.setState({experience})
+        this.setExperienceObj(experience)
       }
     setFilter(filter){
       this.setState({filter})
@@ -131,7 +143,13 @@ class App extends Component {
     }
     setHackathonObj(index){
       this.setState({hackathonObj: this.state.hackathonListObj[index]})
+    }
+    setExperienceObj(index){
+      this.setState({experienceObj: this.state.experienceListObj[index]})
+    }
 
+    setProfile(index){
+      this.setState({})
     }
 
     render() {
@@ -146,6 +164,7 @@ class App extends Component {
             hackathon={this.state.hackathon}
             setProject={this.setProject}
             setHackathon={this.setHackathon}
+            experienceObj={this.state.experienceObj}
             setExperience={this.setExperience}/>
           <SkillList/>
           <FilterList setFilter={this.setFilter} />

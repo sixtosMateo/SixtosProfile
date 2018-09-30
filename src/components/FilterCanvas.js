@@ -12,7 +12,11 @@ class FilterCanvas extends React.Component{
   render(){
     const filters = [ <Resume/>,
                       <Project setProject={this.props.setProject} />,
-                      <Experience setExperience={this.props.setExperience} experience={this.props.experience}/>,
+                      <Experience
+                      setExperience={this.props.setExperience}
+                      experience={this.props.experience}
+                      experienceObj={this.props.experienceObj}
+                      />,
                       <Hackathon
                         setHackathon={this.props.setHackathon}
                         hackathon={this.props.hackathon}

@@ -6,7 +6,7 @@ class City extends React.Component{
   render(){
     return (
       <div className="experience-city">
-            City
+            {this.props.city}
       </div>
 
     )

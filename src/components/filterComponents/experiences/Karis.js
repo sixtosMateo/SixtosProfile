@@ -17,18 +17,17 @@ class Karis extends React.Component{
   render(){
     return (
       <div className="karis">
-          karis
-          <City />
-          <Company />
-          <Date />
-          <Duties />
-          <Github />
-          <Learning />
-          <Lines />
-          <Link />
-          <Position />
-          <TeamSize />
-          <Tools />
+      <City city={this.props.experienceObj.city}/>
+      <Company company={this.props.experienceObj.company}/>
+      <Date date={this.props.experienceObj.date}/>
+      <Duties duties={this.props.experienceObj.duties} />
+      <Github github={this.props.experienceObj.github} />
+      <Learning learning={this.props.experienceObj.learning} />
+      <Lines lines={this.props.experienceObj.lines} />
+      <Link link={this.props.experienceObj.link} />
+      <Position position={this.props.experienceObj.position} />
+      <TeamSize teamsize={this.props.experienceObj.teamsize}/>
+      <Tools tools={this.props.experienceObj.tools}/>
       </div>
 
     )

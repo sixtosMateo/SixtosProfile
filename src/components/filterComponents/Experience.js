@@ -7,7 +7,7 @@ import Nlightn from './experiences/nLightn'
 class Experience extends React.Component{
   render(){
     const experiences = [ "Capital", "Karis", "nLightn"];
-    const components = [ <Capital />, <Karis />, <Nlightn />];
+    const components = [ <Capital experienceObj={this.props.experienceObj}/>, <Karis experienceObj={this.props.experienceObj}/>, <Nlightn experienceObj={this.props.experienceObj}/>];
 
     return (
       <div className="experience-canvas">

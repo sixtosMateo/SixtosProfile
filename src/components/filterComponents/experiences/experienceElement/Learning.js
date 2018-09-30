@@ -6,7 +6,7 @@ class Learning extends React.Component{
   render(){
     return (
       <div className="experience-learning">
-            Learning
+            {this.props.learning}
       </div>
 
     )

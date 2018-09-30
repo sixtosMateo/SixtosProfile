@@ -6,7 +6,7 @@ class Links extends React.Component{
   render(){
     return (
       <div className="experience-links">
-            Links
+      {this.props.links}
       </div>
 
     )

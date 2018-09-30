@@ -6,7 +6,7 @@ class TeamSize extends React.Component{
   render(){
     return (
       <div className="experience-teamsize">
-            Team Size
+        {this.props.teamsize}
       </div>
 
     )

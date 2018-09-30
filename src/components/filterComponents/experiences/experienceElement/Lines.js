@@ -6,7 +6,7 @@ class Lines extends React.Component{
   render(){
     return (
       <div className="experience-lines">
-            Lines
+        {this.props.lines}
       </div>
 
     )

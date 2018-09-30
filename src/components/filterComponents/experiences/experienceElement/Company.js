@@ -6,7 +6,7 @@ class Company extends React.Component{
   render(){
     return (
       <div className="experience-company">
-            Company
+            {this.props.company}
       </div>
 
     )

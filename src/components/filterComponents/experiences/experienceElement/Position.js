@@ -6,7 +6,8 @@ class Position extends React.Component{
   render(){
     return (
       <div className="experience-position">
-            Position
+        {this.props.position}
+
       </div>
 
     )

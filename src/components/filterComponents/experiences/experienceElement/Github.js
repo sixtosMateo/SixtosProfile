@@ -6,7 +6,7 @@ class Github extends React.Component{
   render(){
     return (
       <div className="experience-github">
-            Github
+            {this.props.github}
       </div>
 
     )
