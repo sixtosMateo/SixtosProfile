@@ -6,7 +6,7 @@ class Tools extends React.Component{
   render(){
     return (
       <div className="tools">
-            Tools
+            {this.props.tools}
       </div>
 
     )

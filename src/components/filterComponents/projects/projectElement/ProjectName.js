@@ -6,7 +6,7 @@ class ProjectName extends React.Component{
   render(){
     return (
       <div className="projectName">
-            ProjectName
+            {this.props.projectName}
       </div>
 
     )
