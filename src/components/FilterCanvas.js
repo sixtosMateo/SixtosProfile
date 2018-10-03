@@ -11,7 +11,11 @@ import Resume from './filterComponents/Resume'
 class FilterCanvas extends React.Component{
   render(){
     const filters = [ <Resume/>,
-                      <Project setProject={this.props.setProject} />,
+                      <Project
+                      setProject={this.props.setProject}
+                      project={this.props.project}
+                      projectObj={this.props.projectObj}
+                      />,
                       <Experience
                       setExperience={this.props.setExperience}
                       experience={this.props.experience}

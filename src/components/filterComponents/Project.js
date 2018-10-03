@@ -6,8 +6,8 @@ import SynCare from './projects/SynCare'
 
 class Project extends React.Component{
   render(){
-    const projects = [ "SynCare", "Chat", "Restaurant"];
-    const components = [ <Chat />, <Restaurant />, <SynCare />];
+    const projects = [ "Chat", "Restaurant","SynCare"];
+    const components = [ <Chat projectObj={this.props.projectObj}/>, <Restaurant projectObj={this.props.projectObj}/>, <SynCare projectObj={this.props.projectObj}/>];
     return (
       <div className="project-canvas">
 
@@ -15,12 +15,13 @@ class Project extends React.Component{
           { projects.map((project, index)=>{
             return(
                 <a key={index} className={"project-" + project}
-                  onClick={()=> this.props.setProject(project)}>
+                  onClick={()=> this.props.setProject(index)}>
                   { project }
                 </a>
             )
           }) }
       </div>
+      { components[this.props.project] }
 
       </div>
     )
