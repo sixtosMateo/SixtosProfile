@@ -35,6 +35,40 @@
 .hackathon-component{
   border: 2px solid;
 }
+.hackathon-title{
+  border: 1px solid;
+}
+.hackathon-center{
+  border: 1px solid;
+
+}
+.name, .date{
+  width: 49%;
+  border: 1px solid;
+  display: inline-block;
+}
+.name{
+  text-align: left;
+}
+.date{
+  text-align: right;
+}
+.teammates{
+  border: 1px solid;
+  width: 100%;
+}
+.image, .tools{
+  width: 49%;
+  border: 1px solid;
+  display: inline-block;
+}
+.description{
+  border: 1px solid;
+}
+.learning{
+  width: 98%;
+  border: 1px solid;
+}
 
 .experience-nav a{
   border: 1px solid;

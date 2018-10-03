@@ -5,7 +5,7 @@ import React from 'react'
 class ProjectName extends React.Component{
   render(){
     return (
-      <div className="project-name">
+      <div className="name">
 
       { this.props.projectName }
 
