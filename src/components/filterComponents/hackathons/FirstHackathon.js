@@ -14,11 +14,11 @@ class FirstHackathon extends React.Component{
   render(){
     return (
         <div className="first-hackathon">
-        <div className="hackathon-title">
+        <div className="title">
           <ProjectName projectName={this.props.hackathonObj.projectName}/>
           <Date date={this.props.hackathonObj.date}/>
         </div>
-        <div className="hackathon-center">
+        <div className="center">
           <Teammates teammates={this.props.hackathonObj.teammates}/>
           <Image image={this.props.hackathonObj.image}/>
           <Tools tools={this.props.hackathonObj.tools}/>

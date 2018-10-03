@@ -10,11 +10,15 @@ class SynCare extends React.Component{
   render(){
     return (
       <div className="project-syncare">
-          <ProjectName projectName={this.props.projectObj.projectName}/>
-          <Date date={this.props.projectObj.date}/>
-          <Lines lines={this.props.projectObj.lines} />
-          <Description position={this.props.projectObj.description} />
-          <Tools tools={this.props.projectObj.tools}/>
+        <div className="title">
+        <ProjectName projectName={this.props.projectObj.projectName} />
+        <Date date={this.props.projectObj.date} />
+        </div>
+        <div className="center">
+        <Tools tools={this.props.projectObj.tools} />
+        <Lines lines={this.props.projectObj.lines} />
+        </div>
+        <Description description={this.props.projectObj.description} />
        </div>
 
     )
