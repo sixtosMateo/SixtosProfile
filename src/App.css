@@ -53,6 +53,38 @@
 .date{
   text-align: right;
 }
+
+.city, .position{
+  width: 49%;
+  border: 1px solid;
+  display: inline-block;
+}
+
+.center-heading{
+  border: 1px solid;
+}
+.center-middle{
+  border: 1px solid;
+}
+.center-right{
+  border: 1px solid;
+  width: 49%;
+  display: inline-block;
+
+}
+.center-left{
+  border: 1px solid;
+  width: 49%;
+  display: inline-block;
+
+}
+.center-tool, .center-lines{
+  border: 1px solid;
+}
+
+.teamsize{
+  border: 1px solid;
+}
 .teammates{
   border: 1px solid;
   width: 100%;
@@ -62,9 +94,13 @@
   border: 1px solid;
   display: inline-block;
 }
+.duties{
+  width: 49%;
+  border: 1px solid;
+  display: inline-block;
+}
 .description{
   border: 1px solid;
-
 }
 .learning{
   width: 100%;

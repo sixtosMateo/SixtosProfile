@@ -1,7 +1,7 @@
 import React from 'react'
 
 import City from './experienceElement/City'
-import Company from './experienceElement/Company'
+import ProjectName from './experienceElement/ProjectName'
 import Date from './experienceElement/Date'
 import Duties from './experienceElement/Duties'
 import Github from './experienceElement/Github'
@@ -17,9 +17,12 @@ class Karis extends React.Component{
   render(){
     return (
       <div className="karis">
+
+        <div className="title">
+          <ProjectName projectName={this.props.experienceObj.projectName}/>
+          <Date date={this.props.experienceObj.date}/>
+        </div>
       <City city={this.props.experienceObj.city}/>
-      <Company company={this.props.experienceObj.company}/>
-      <Date date={this.props.experienceObj.date}/>
       <Duties duties={this.props.experienceObj.duties} />
       <Github github={this.props.experienceObj.github} />
       <Learning learning={this.props.experienceObj.learning} />

@@ -5,7 +5,7 @@ import React from 'react'
 class Lines extends React.Component{
   render(){
     return (
-      <div className="experience-lines">
+      <div className="">
         {this.props.lines}
       </div>
 

@@ -5,14 +5,15 @@ import React from 'react'
 class Duties extends React.Component{
   render(){
     return (
-      <div className="experience-duties">
-            {
-              Object.keys(this.props.duties).map(function(keyName, keyIndex) {
-                {keyName}
-              })
-            }
+      <div className="duties">
+          <ul>
+            {this.props.duties.map((duty, index)=>{
+              return (
+                <li>{ duty }</li>
+              )
+            })}
 
-
+            </ul>
       </div>
 
     )
