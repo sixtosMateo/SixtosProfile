@@ -46,9 +46,9 @@ class Capital extends React.Component{
 
         </div>
           <Github github={this.props.experienceObj.github} />
+          <Link links={this.props.experienceObj.links} />
           <Learning learning={this.props.experienceObj.learning} />
 
-          <Link links={this.props.experienceObj.links} />
 
 
 
