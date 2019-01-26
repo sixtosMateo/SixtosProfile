@@ -5,7 +5,7 @@ class ImageCanvas extends React.Component{
   render(){
     return (
       <div className="image-canvas">
-        <p>"Images"</p>
+        <img src="ocean.jpg" />
       </div>
     )
   }
